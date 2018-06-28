@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 MAINTAINER Christian Winther <jippignu@gmail.com>
 
-RUN    echo 'deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse' > /etc/apt/sources.list.d/mongodb-org-3.2.list \
+RUN    echo 'deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/4.0.0 multiverse' > /etc/apt/sources.list.d/mongodb-org-4.0.0.list \
     && echo 'deb http://repo.pritunl.com/stable/apt xenial main' > /etc/apt/sources.list.d/pritunl.list \
     && echo "deb http://build.openvpn.net/debian/openvpn/stable xenial main" > /etc/apt/sources.list.d/openvpn-aptrepo.list \
     && apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 42F3E95A2C4F08279C4960ADD68FA50FEA312927 \
